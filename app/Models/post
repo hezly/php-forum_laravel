@@ -1,0 +1,36 @@
+<?php
+
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class post extends Model
+{
+     /**
+     * The attributes that are mass assignable.
+     *
+     * @var string
+     */
+    
+
+    protected $table ='post';
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'category_id','title','body','keywords',
+    ];
+    
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+    ];
+}
+
+
